@@ -1,4 +1,12 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+
+# sass
 .sass-cache/
 *.css.map
 *.sass.map
 *.scss.map
+
+package-lock.json
