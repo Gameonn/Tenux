@@ -17,12 +17,14 @@
       width: 100%;
       grid-row: row-start 1 / span 4;
       grid-column: col-start 1 / span 4;
+      box-shadow: $img-shadow;
     }
     &-2 {
       width: 120%;
       grid-row: row-start 3 / span 4;
       grid-column: col-start 3 / span 4;
       z-index: 10;
+      box-shadow: $img-shadow;
     }
   }
   &__content {
