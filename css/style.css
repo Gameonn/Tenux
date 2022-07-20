@@ -171,10 +171,12 @@ body {
       font-weight: 400;
       padding: 1.25rem;
       background-color: #101d2c;
-      transform: translateY(-25px);
+      transform: translateY(-35px);
       z-index: 2; }
     .homes .home__btn {
       grid-column: 1/-1; }
+    .homes .home__location, .homes .home__rooms {
+      margin-top: -3rem; }
     .homes .home__location, .homes .home__rooms, .homes .home__area, .homes .home__price {
       font-size: 1.5rem;
       margin-left: 2rem;

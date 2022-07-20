@@ -42,11 +42,15 @@
       font-weight: 400;
       padding: 1.25rem;
       background-color: $color-secondary;
-      transform: translateY(-25px);
+      transform: translateY(-35px);
       z-index: 2;
     }
     &__btn {
       grid-column: 1/-1;
+    }
+    &__location,
+    &__rooms {
+      margin-top: -3rem;
     }
     &__location,
     &__rooms,
