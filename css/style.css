@@ -68,6 +68,9 @@ body {
 .mb-hg {
   margin-bottom: 8rem; }
 
+.mt-lg {
+  margin-top: 4rem; }
+
 .sidebar {
   background-color: #c69963;
   grid-column: side-start/ side-end;
@@ -185,3 +188,10 @@ body {
     .footer .nav__item-link:hover, .footer .nav__item-link:active {
       background-color: rgba(255, 255, 255, 0.05);
       transform: translateY(-3px); }
+  .footer .copyright {
+    font-size: 1.4rem;
+    color: #aaa;
+    margin-right: auto;
+    margin-left: auto;
+    width: 70%;
+    text-align: center; }
