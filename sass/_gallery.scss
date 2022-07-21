@@ -6,7 +6,7 @@
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(7, auto);
   grid-gap: 1.5rem;
-  pading: 1.5rem;
+  padding: 1.5rem;
   &__item {
     &--1 {
       grid-row: 1 / span 2;
