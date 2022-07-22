@@ -68,6 +68,9 @@ body {
 .mb-hg {
   margin-bottom: 8rem; }
 
+.mt-lg {
+  margin-top: 4rem; }
+
 .sidebar {
   background-color: #c69963;
   grid-column: side-start/ side-end;
@@ -213,4 +216,41 @@ body {
 
 .footer {
   background-color: #101d2c;
-  grid-column: full-start/full-end; }
+  grid-column: full-start/full-end;
+  padding: 8rem; }
+  .footer .nav {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    align-items: center;
+    grid-gap: 2rem; }
+    .footer .nav__item-link:visited, .footer .nav__item-link:link {
+      font-size: 1.4rem;
+      color: #fff;
+      text-decoration: none;
+      font-family: "Josefin Sans", sans-serif;
+      text-transform: uppercase;
+      text-align: center;
+      padding: 1.5rem;
+      display: block;
+      transition: all 0.2s; }
+    .footer .nav__item-link:hover, .footer .nav__item-link:active {
+      background-color: rgba(255, 255, 255, 0.05);
+      transform: translateY(-3px); }
+  .footer .copyright {
+    font-size: 1.4rem;
+    color: #aaa;
+    margin-right: auto;
+    margin-left: auto;
+    width: 70%;
+    text-align: center; }
+    .footer .copyright__link:visited, .footer .copyright__link:link {
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+      display: inline-block;
+      transition: all 0.5s ease; }
+    .footer .copyright__link:hover, .footer .copyright__link:active {
+      color: #c69963;
+      box-shadow: 0 1rem 2rem rbga(0, 0, 0, 0.15);
+      transform: rotate(5deg) scale(1.2) translateX(6px); }
