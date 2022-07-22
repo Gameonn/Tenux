@@ -17,6 +17,13 @@ $font-display: "Josefin Sans", sans-serif;
 // SHADOW
 $img-shadow: 0 2rem 5rem rgba(#000, 0.15);
 
+// Responsive Breakpoints for screen sizes used in media queries
+$bp-largest: 75em; // 1200px
+$bp-large: 68.75em; // 1100px
+$bp-medium: 56.25em; // 900px
+$bp-small: 37.5em; // 600px
+$bp-smallest: 31.25em; // 500px
+
 *,
 *::before,
 *::after {
@@ -27,6 +34,10 @@ $img-shadow: 0 2rem 5rem rgba(#000, 0.15);
 html {
   box-sizing: border-box;
   font-size: 62.5%; // 10/16 = 62.50 -> 1rem = 10px
+
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 50%;
+  }
 }
 body {
   font-family: $font-primary;
@@ -41,6 +52,18 @@ body {
     [side-start] 8rem [side-end full-start] minmax(6rem, 1fr)
     [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
     [center-end] minmax(6rem, 1fr) [full-end]; // 1140px/8 ~ 14rem
+
+  @media only screen and (max-width: $bp-large) {
+    grid-template-rows: 6rem 80vh min-content 40vw repeat(3, min-content);
+    grid-template-columns:
+      [full-start] minmax(6rem, 1fr)
+      [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
+      [center-end] minmax(6rem, 1fr) [full-end];
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    grid-template-rows: 6rem calc(100vh - 6rem);
+  }
 
   & > * {
     padding: 40px;
