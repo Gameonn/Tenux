@@ -123,7 +123,7 @@ body {
 .header {
   background-color: #54483a;
   grid-column: full-start/col-end 6;
-  background-image: linear-gradient(rgba(16, 29, 44, 0.9), rgba(16, 29, 44, 0.9)), url(../img/hero.jpeg);
+  background-image: linear-gradient(rgba(16, 29, 44, 0.9), rgba(16, 29, 44, 0.9)), url("../img/hero.jpeg");
   background-size: cover;
   background-position: center;
   padding: 8rem;
@@ -203,11 +203,14 @@ body {
 
 .features {
   grid-column: center-start/center-end;
-  margin: 15rem 0;
+  margin: 10rem 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 3rem;
   align-items: start; }
+  @media only screen and (max-width: 56.25em) {
+    .features {
+      margin: 5rem 0; } }
   .features .feature {
     display: grid;
     grid-template-columns: min-content 1fr;
