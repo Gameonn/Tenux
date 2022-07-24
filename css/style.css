@@ -12,7 +12,7 @@ body {
   font-family: "Nunito", sans-serif;
   color: #6d5d4b;
   font-weight: 300;
-  line-height: 1.6; }
+  line-height: 1.5; }
 
 .container {
   display: grid;
@@ -301,7 +301,7 @@ body {
       text-decoration: none;
       text-transform: uppercase;
       display: inline-block;
-      transition: all 0.5s ease; }
+      transition: all 0.4s ease-in; }
     .footer .copyright__link:hover, .footer .copyright__link:active {
       color: #c69963;
       box-shadow: 0 1rem 2rem rbga(0, 0, 0, 0.15);
