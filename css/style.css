@@ -105,16 +105,25 @@ body {
 
 .features {
   grid-column: center-start/center-end;
-  margin: 15rem 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  grid-gap: 3rem;
-  align-items: start; }
+  margin: 15rem 0; }
+  @supports (display: grid) {
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+      grid-gap: 3rem;
+      align-items: start; } }
   .features .feature {
+    float: left;
+    width: 33.33%;
+    margin-bottom: 5rem;
     display: grid;
     grid-template-columns: min-content 1fr;
     grid-row-gap: 1.5rem;
     grid-column-gap: 2rem; }
+    @supports (display: grid) {
+      .features .feature {
+        width: auto;
+        margin-bottom: 0; } }
     .features .feature__icon {
       height: 4rem;
       width: 4rem;
