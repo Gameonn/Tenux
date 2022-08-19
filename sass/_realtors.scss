@@ -9,13 +9,23 @@
   align-content: center;
   grid-row-gap: 2rem;
 
+  @media only screen and (max-width: $bp-medium) {
+    grid-column: 1/ -1;
+  }
+
   &__list {
     display: grid;
     grid-template-columns: min-content max-content;
-    grid-template-rows: repeat(3, 1fr);
     grid-row-gap: 5vh;
     grid-column-gap: 2rem;
     align-items: center;
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-template-columns: repeat(3, min-content max-content);
+    }
+    @media only screen and (max-width: $bp-smallest) {
+      grid-template-columns: min-content max-content;
+    }
   }
   &__img {
     width: 7rem;
