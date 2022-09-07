@@ -19,7 +19,7 @@
         font-family: $font-display;
         text-transform: uppercase;
         text-align: center;
-        padding: 1.5rem;
+        padding: 1.4rem;
         display: block;
         transition: all 0.2s;
       }
@@ -54,7 +54,7 @@
       &:active {
         color: $color-primary;
         box-shadow: 0 1rem 2rem rbga(0, 0, 0, 0.15);
-        transform: rotate(5deg) scale(1.2) translateX(6px);
+        transform: rotate(5deg) scale(1.25) translateX(6px);
       }
     }
   }
